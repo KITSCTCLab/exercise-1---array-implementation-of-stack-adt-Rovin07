@@ -6,7 +6,7 @@ class Stack:
         self.top = -1
         
     def is_empty(self):
-        return self.top ==-1
+        return len(items) == 0
 
     def is_full(self):
         return self.top == self.size - 1
