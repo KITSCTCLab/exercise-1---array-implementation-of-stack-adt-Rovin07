@@ -5,21 +5,27 @@ class Stack:
         self.size = size
 
     def is_empty(self):
-        # Write code here
+        self.top=-1
+        return self.top ==-1
 
     def is_full(self):
-        # Write code here
+        return self.top == self.size - 1
 
     def push(self, data):
         if not self.is_full():
-            # Write code here
+             self.top += 1
+             x = int(input("Enter the number for insertion:")
+             self.items[self.top] = x
+           
 
     def pop(self):
         if not self.is_empty():
-            # Write code here
+            self.items[self.top] = None
+            self.top -= 1
 
     def status(self):
-        # Write code here
+        for i in range(self.top + 1):
+             
 
 # Do not change the following code
 size, queries = map(int, input().rstrip().split())
