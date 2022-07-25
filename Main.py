@@ -14,8 +14,7 @@ class Stack:
     def push(self, data):
         if not self.is_full():
              self.top += 1
-             x = int(input("Enter the number for insertion:")
-             self.items[self.top] = x
+            
            
 
     def pop(self):
