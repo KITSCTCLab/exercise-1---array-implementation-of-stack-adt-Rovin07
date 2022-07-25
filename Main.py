@@ -6,26 +6,23 @@ class Stack:
         self.top = -1
         
     def is_empty(self):
-        return len(items) == 0
+        return len(self.items) == 0
 
     def is_full(self):
-        return self.top == self.size - 1
+        return len(self.items) == size
 
     def push(self, data):
         if not self.is_full():
-             self.top += 1
-             x = int(input("Enter the number for insertion:")
-             self.items[self.top] = x
+               self.items.append(values[1])
             
-           
-
     def pop(self):
         if not self.is_empty():
-            self.items[self.top] = None
-            self.top -= 1
+               self.items.pop()
 
     def status(self):
-        for i in range(self.top + 1):
+        for i in self.items:
+            print(i)
+
              
 
 # Do not change the following code
